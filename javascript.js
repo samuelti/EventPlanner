@@ -3,7 +3,7 @@ var startHour = 9;
 var pageTopTime = moment().format("dddd, MMMM Do");
 document.getElementById("currentDay").innerHTML = pageTopTime;
 function generateRows() {
-    for (var rowNum = 0; rowNum < 24; rowNum++) {
+    for (var rowNum = 0; rowNum < 9; rowNum++) {
         var amPmHour = moment().hour(rowNum+startHour);
         var amPmHourStr = amPmHour.format("h A");
         console.log(amPmHourStr);
